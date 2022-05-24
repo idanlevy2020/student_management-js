@@ -1,0 +1,74 @@
+/**************** For mobile phones: ****************/
+main{
+   border: 2px solid #27b6da;
+}
+
+main table {
+   border-collapse: collapse;
+   width: 100%;
+}
+
+th,
+td {
+   border: 1px solid #dddddd;
+   text-align: left;
+   padding: 8px;
+   font-size: 12px;
+}
+
+.editeBtn{
+   margin-left: 5px;
+}
+tbody tr:hover {
+   background-color: lightskyblue;
+}
+
+.img,
+.age,
+.email,
+.gender,
+.school,
+.city {
+   display: none;
+}
+
+@media only screen and (min-width: 600px) {
+   /* For tablets: */
+   td{
+      font-size: 14px;
+   }
+
+   .age,.img{
+      display: table-cell;
+   }
+}
+
+@media only screen and (min-width: 650px) {
+   .email {
+      display: table-cell;
+   }
+}
+
+@media only screen and (min-width: 768px) {
+   /* For tablet: */
+   td{
+      font-size: 16px;
+   }
+
+
+   .phone{
+      width: 120px;
+   }
+
+   .gender {
+      display: table-cell;
+   }
+}
+
+@media only screen and (min-width: 1000px) {
+   /* For desktop: */
+   .school,
+   .city{
+      display: table-cell;
+   }
+}

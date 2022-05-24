@@ -1,0 +1,29 @@
+/**************** For mobile phones: ****************/
+header{
+   background-color: #080c0a;
+   height:70px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width:100%;
+}
+
+header h1{
+   color: white;
+   font-size: 18px;
+   text-align: left;
+}
+
+@media only screen and (min-width: 600px) {
+   /* For tablets: */
+   header h1{
+      font-size: 22px;
+   }
+}
+
+@media only screen and (min-width: 768px) {
+   /* For desktop: */
+   header h1{
+      font-size: 26px;
+   }
+}
