@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="header.css" type="text/css" />
       <link rel="stylesheet" href="main.css" type="text/css" />
       <link rel="stylesheet" href="footer.css" type="text/css" />
+      <link rel="stylesheet" href="modal.css" type="text/css"/>
    </head>
    <body>
       <div class="app">
@@ -33,6 +34,44 @@
             <footer><p>powered by idan levy</p></footer>
          </div>
       </div>
-      <script src="index.js" type="text/javascript"></script>
+     <div class="modal">
+      <div class="modal-content">
+        <div>
+          <span class="close">&times;</span> <!-- X -->
+          <h1>Student Profile</h1>
+          <p class="edit message">you can edit the details</p>
+        </div>
+        <form>
+         <div class="form_container flex-column">
+           <div class="flex-column">
+             <label htmlfor="name">Name</label>
+             <input type="text" defaultValue={student.name} id="name" name="name"/>
+             <label htmlfor="id">id</label>
+             <input type="text" defaultValue={student.id} id="id" name="id"/>
+             <label htmlfor="age">age</label>
+             <input type="text" defaultValue={student.age} id="age" name="age"/>
+             <label htmlfor="email">email</label>
+             <input type="text" defaultValue={student.email} id="email" name="email"/>
+           </div>
+           <div class="flex-column">
+             <label htmlfor="phone">phone</label>
+             <input type="text" defaultValue={student.phone} id="phone" name="phone"/>
+             <label htmlfor="gender">gender</label>
+             <input type="text" defaultValue={student.gender} id="gender" name="gender"/>
+             <label htmlfor="school">school</label>
+             <input type="text" defaultValue={student.school} id="school" name="school"/>
+             <label htmlfor="city">city</label>
+             <input type="text" defaultValue={student.city} id="city" name="city"/>
+           </div>
+         </div>
+         <p class="save message">all details saved</p>
+         <div class="buttonsForm flex-row">
+           <button type="button" className="saveBtn"> Save </button>
+         </div>
+       </form> 
+      </div>
+    </div>
+     <script src="index.js" type="module"></script>
+     <script src="modal_edit.js" type="module"></script> 
    </body>
 </html>

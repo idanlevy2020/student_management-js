@@ -1,6 +1,9 @@
 const main = document.querySelector("main");
 let tbody = document.querySelector("tbody");
+const modal=document.querySelector(".modal");
 let users = []; //state
+
+console.log('modal',modal);
 
 function getUsers() {
    fetch("https://jsonplaceholder.typicode.com/users")
@@ -62,6 +65,7 @@ function render(data) {
    });
 }
 
-function openModal() {
-   console.log("open modal");
+function openModal(user,i) {
+   console.log("open modal in user",user);
+   modal.style.display="block";
 }

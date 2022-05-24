@@ -19,6 +19,16 @@ button{
    /* padding: 8px 5px; */
 }
 
+.flex-row{
+   display: flex;
+}
+
+.flex-column{
+   display: flex;
+   flex-direction: column;
+}
+
+
 
 /**************** For mobile phones: ****************/
 .app{

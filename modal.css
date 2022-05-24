@@ -1,0 +1,127 @@
+/* The Modal (background) */
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: #474e5d;
+   padding-top: 50px;
+ }
+ 
+ /* Modal Content/Box */
+ .modal-content {
+   background-color: #fefefe;
+   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+   border: 1px solid #888;
+   width: 80%; /* Could be more or less, depending on screen size */
+ }
+
+ /* The Close Button (x) */
+.close {
+   position: absolute;
+   right: 35px;
+   top: 15px;
+   font-size: 40px;
+   font-weight: bold;
+   color: #f1f1f1;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #f44336;
+   cursor: pointer;
+ }
+
+
+
+ /**************** For mobile phones: ****************/
+/* .About{
+  width:360px;
+  padding:10px;
+} */
+
+/* .About .about-header{
+  justify-content:space-between;
+} */
+
+/* .About .about-header img{
+  width:80px;
+  height:80px;
+} */
+.modal-header h1{
+  margin-bottom:10px;
+}
+
+.form_container input{
+  width:100%;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  padding:12px;
+  background-color: #000000d8;;
+  color:white;
+  border:none;
+}
+
+
+.form_container input:hover{
+  background-color:black;
+}
+
+.form_container label{
+  font-weight:bold;
+}
+
+.message{
+  font-weight: bold;
+  padding: 10px 0px 20px 0px;
+}
+
+form .save.message{
+  color:red;
+}
+
+.About .buttonsForm{
+  justify-content: space-around;
+}
+
+.About .buttonsForm button{
+  color:white;
+  background-color: #000000d8;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.About .buttonsForm button:hover{
+  background-color: black;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .About{
+     width: 600px;
+  }
+
+  .form_container{
+     flex-direction: row;
+     justify-content:space-between;
+  }
+
+  .form_container input{
+     width:280px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .About{
+     width: 740px;
+  }
+
+  .form_container input{
+     width:320px;
+  }
+}
